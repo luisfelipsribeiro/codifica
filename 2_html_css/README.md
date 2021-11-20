@@ -173,6 +173,8 @@ Essa é sem dúvida a forma mais rápida e normalmente aprendemos por aqui, no e
 
 Não apenas isso, mas se por algum motivo você precisar alterar o estilo, terá que alterar em todos!
 
+[Aqui](https://www.loom.com/share/48c6b1e970764d44af511efa6cd26e16?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre o `CSS` do jeito *"feio"*.
+
 ## Do jeito *"mais ou menos"*
 O modo *"mais ou menos"* de trabalhar com o `CSS` busca facilitar o problema que existe no modo anterior, ou seja, aqui não fazemos os estilos de maneira duplicada para cada elemento. 
 
@@ -200,6 +202,8 @@ Você pode estar se perguntando:
 > E por que esse é o modo *"mais ou menos"* se já resolve os problemas apontados anteriormente?
 
 Porque todo estilo criado dentro da tag `style` pode ser aproveitado apenas por essa página, e um site por mais simples que seja dificilmente terá apenas uma página. Nesse caso, teremos que lidar com duplicações e possivelmente com modificações. 
+
+[Aqui](https://www.loom.com/share/b44679a6a10b4c44b8ff2a7d52719003?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre o `CSS` do jeito *"mais ou menos"*.
 
 ## Do jeito ***"certo"***
 O melhor modo de trabalhar com o `CSS` é tendo **um arquivo dedicado para isso**. Assim poderemos nos beneficiar de todos os pontos anteriores, teremos estilos aplicados facilmente para todos os elementos da página e ainda poderemos compartilhar esses estilos entre páginas de um mesmo site. Mantendo assim uma identidade visual coerente e mais fácil de gerenciar.
@@ -233,3 +237,5 @@ A propriedade `rel="stylesheet"` é referente ao tipo de link que estamos fazend
 Já a propriedade `href="estilo.css"` é onde estamos informando qual o arquivo de estilo que queremos utilizar na nossa página (é necessário informar o nome do arquivo e a extensão).
 
 **Importante**: podemos linkar quantos arquivos CSS forem necessários em nossas páginas! Porém, precisamos ter cuidado para que os mesmos elementos não estejam sendo modificado nos diversos arquivos, pois isso pode ocasionar efeitos coloterais difíceis de rastrear.
+
+[Aqui](https://www.loom.com/share/f130cf7119064703b50ebfda194a18f8?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre o `CSS` do jeito *"certo"*.
