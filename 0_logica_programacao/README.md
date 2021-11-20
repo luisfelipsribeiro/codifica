@@ -160,10 +160,46 @@ Tabela da verdade para o `OU (||)`:
 ---
 
 ## Loops
-...
+Loops são estruturas de repetição e servem para algoritmos onde precisamos executar um mesmo bloco de código diversas vezes.
 
-### FOR
-...
+Imagine que você está programando um jogo de tabuleiro, daqueles que o jogador precisa avançar todas as casas até o fim para ganhar. Toda vez que uma pessoa joga um dado, o personagem desta pessoa precisa andar a quantidade de casas igual ao valor obtido no dado.
 
-### WHILE
-...
+Se você tem um comando para andar uma casa, por exemplo, e o valor obtido no dado for 6, você precisará escrever esse comando 6 vezes para que o personagem ande todas as casas.
+
+Usando um comando de Loop, podemos automatizar essas execuções e repetir quantas vezes for necessário sem necessariamente precisar escrever um mesmo código várias vezes
+
+Quando precisamos executar um mesmo trecho de código diversas vezes e decidimos recorrer aos Loops, podemos escolher entre dois tipos:
+
+1. O primeiro tipo é quando **sabemos exatamente quantas vezes vamos precisar repetir**, assim como no exemplo do jogo de tabuleiro, o número que sair no dado é o número de vezes que teremos que repetir uma ação.
+2. O segundo tipo é quando **NÃO sabemos exatamente quantas vezes vamos precisar repetir** um comando, no entanto **sabemos uma condição que pode fazê-lo terminar**.
+
+Vamos detalhar um pouco mais cada um deles na sequência.
+
+### `FOR (para)`
+O bloco de comando `FOR` é utilizado quando sabemos exatamente quantas vezes uma determinada ação precisa ser executada.
+
+Este comando normalmente tem a seguinte estrutura:
+- Uma variável inteira para controlar a quantidade de voltas
+- Um valor limite que marca o máximo de voltas
+- Como a quantidade de voltas será controlada (de maneira crescente ou decrescente)
+- Como as voltas serão contadas (de 1 em 1, de 2 em 2, etc)
+
+Exemplo: Imagine que você está enviando 10 imagens em um grupo do Whatsapp, nesse caso o Whatsapp sabe exatamente quantas vezes ele precisa executar o comando para enviar imagem. Ele começa na primeira e vai enviando de 1 em 1, até concluir as 10 imagens.
+
+### `WHILE (enquanto)`
+Por outro lado, nem sempre é fácil determinar quantas vezes será necessário executar algo.
+
+Nesses casos, podemos utilizar o `WHILE`, a tradução deste comando em Português é enquanto, ou seja enquanto alguma condição for verdadeira o bloco de comandos em questão será repetido.
+
+Então, para montar esse bloco de comando precisamos de apenas 1 coisa:
+- Uma condição que nos diga quando continuar executando e quanto parar.
+
+Exemplo: Se você estiver fazendo uma receita em que precise misturar bem todos os ingredientes, provavelmente uma instrução do tipo “misture 50 vezes” não faz muito sentido, seria muito melhor algo como: ***“misture até ficar homogêneo”*** ou até mesmo ***“misture enquanto conseguir identificar os ingredientes”***
+
+Ao utilizar o `WHILE` precisamos ter cuidado para estabeler bem claramente a condição de finalização, se não corremos o risco de ter uma aplicação rodando pra sempre.
+
+Alguns exemplos de condições que podem fazer uma aplicação rodar pra sempre são:
+- `enquanto 1 == 1` ou qualquer outra comparação que sempre será verdade
+- `enquanto true`
+
+![WHILE True](imagens/while_true.jpg)
