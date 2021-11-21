@@ -97,16 +97,103 @@ Já a propriedade `href="estilo.css"` é onde estamos informando qual o arquivo 
 [Aqui](https://www.loom.com/share/f130cf7119064703b50ebfda194a18f8?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre o `CSS` do jeito *"certo"*.
 
 ## Como selecionar os elementos para aplicar o estilo?
-...
+Considerando que você esteja utilizando o `CSS` do *"jeito certo"* ou até mesmo do jeito *"mais ou menos"*, você tem algumas possibilidades de como selecionar os elementos para aplicação do estilo.
 
 ### Pela tag do elemento
-...
+Você pode utilizar o nome das tags `HTML` para realizar a aplicação dos estilos.
+
+***Importante***: não é necessário utilizar os sinais de `<` ou `>`.
+
+```css
+/* para modificar as cores de todos os parágrafos*/
+p {
+  color: blue;
+}
+
+/* para modificar a largura de todas as imagens */
+img {
+  width: 120px;
+}
+```
 
 ### Pela classe do elemento
-...
+Utilizando a opção acima nós aplicamos os estilos para TODOS os elementos daquele tipo, mas as vezes queremos que apenas alguns elementos sejam modificados, para isso podemos utilizar `classes`.
+
+As classes funcionam como um classificador, agrupando elementos parecidos ou com estilos parecidos. 
+
+Para criar classes, precisamos usar a propriedade `class` nos elementos `HTML`.
+
+Já para aplicar um estilo nessas classes no `CSS`, utilizamos o nome dela iniciando com `ponto(.)`.
+
+```html
+<p class="texto-grande-azul">Um texto qualquer...</p>
+
+<p class="texto-grande-azul">Outro texto qualquer...</p>
+
+<p>Outro parágrafo sem nenhuma classe</p>
+```
+```css
+.texto-grande-azul {
+  font-size: 30px;
+  color: blue;
+}
+```
+
+Cada elemento `HTML` pode ter infinitas classes, nesse caso, elas devem estar dento da mesma propriedade `class` e separadas por espaço. No exemplo abaixo, o parágrafo possui 3 classes:
+
+```html
+<p class="texto-grande-azul titulo texto-em-negrito">Um texto qualquer...</p>
+```
 
 ### Pelo id do elemento
-...
+Outra forma de aplicar estilos a elementos é pelo `id`, imagine o `id` do elemento como o nosso `CPF`, um documento único e que cada cidadão tem o seu.
+
+No caso do `HTML`, cada elemento pode ter o seu id e **NÃO** devemos permitir duplicações, para isso basta preenchermos a propriedade `id`.
+
+Já para aplicar um estilo ao `id` no `CSS`, utilizamos o valor dele iniciando com `jogo da velha ou hashtag(#)`.
+
+```html
+<p id="mensagem-importante">Um texto qualquer...</p>
+
+<p>Outro parágrafo sem nenhuma classe</p>
+```
+```css
+#mensagem-importante {
+  font-size: 30px;
+  color: blue;
+}
+```
+
+### Múltiplas formas de seleção
+Todas as formas de seleção mostradas acima podem ser utilizadas em conjunto, seja para selecionar multiplos elementos ao mesmo tempo, ou para selecionar elementos que estao dentro de elementos, por exemplo:
+
+#### Aplicar o mesmo estilo elementos diferentes
+Usamos os nomes das tags dos elementos, classes ou ids separados por `vírgula(,)`.
+```css
+/* aplicando o mesmo estilo para itens de lista, parágrafos e elementos com a classe ".uma-classe-qualquer */
+li,p,.uma-classe-qualquer {
+  ...
+}
+```
+
+#### Selecionar um elemtento que está dentro de outro
+Usamos os nomes das tags dos elementos, classes ou ids separados por `espaço( )`.
+```css
+/* aplicando o estilo para imagens que estejam dentro de divs */
+div img {
+  ...
+}
+
+/* aplicando o estilo para imagens que estejam dentro de elementos com a classe ".uma-classe-qualquer" */
+.uma-classe-qualquer img {
+  ...
+}
+
+/* aplicando o estilo para elementos com a classe ".uma-classe-qualquer" que estejam dentro de divs */
+div .uma-classe-qualquer {
+  ...
+}
+```
 
 ## Algumas estilizações possíveis
 Abaixo vamos listar algumas das estilizações possíveis, lembrando que são ***apenas algumas***, o `CSS` é muito rico e é possível obter resultados bastante diferentes e inovadores ao explorar suas propriedades.
@@ -224,7 +311,16 @@ Resultado: <p class="exemplo_espacamento_externo">Um parágrafo qualquer</p>
 ## Posicionamento de elementos
 
 ### Utilizando a propriedade `display`
-...
+
+[Aqui](https://www.loom.com/share/8e74e93162244fd9b20b86a354ae86e2?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre posicionamento com a propriedade `display`.
+
+[Aqui](https://www.loom.com/share/fb9fcd15cf874c318dd92787bbdfa41b?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre posicionamento com a propriedade `display: inline-block`.
+
 
 ### Utilizando a propriedade `position`
-...
+
+[Aqui](https://www.loom.com/share/6138f7b95c4248b3a96360bb58c40bba?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre posicionamento com a propriedade `position: relative`.
+
+[Aqui](https://www.loom.com/share/834be468c9074b1988b6418f45f1bfc4?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre posicionamento com a propriedade `position: absolute`.
+
+[Aqui](https://www.loom.com/share/8c1d59757edc472d8fe3ab7f5cc97bbd?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre os cuidados ao utilizar `position: relative` ou `position: absolute`.
