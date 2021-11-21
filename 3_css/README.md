@@ -2,7 +2,7 @@
 
 O `CSS` (Cascading Style Sheets ou Folhas de Estilo em Cascata) é o responsável pela aparência das nossas páginas ou Sites. É com ele que definimos a nossa identidade visual.
 
-Aproveitando o paralelo com o corpo humano que fizemos no começo deste texto, o `CSS` seria não apenas a pele, mas também todas roupas, jóias, maquiagem e até mesmo tatuagens que temos no corpo e que nos diferencia dos demais indivíduos.
+Aproveitando o paralelo com o corpo humano que fizemos no texto sobre `HTML`, o `CSS` seria não apenas a pele, mas também todas roupas, jóias, maquiagem e até mesmo tatuagens que temos no corpo e que pode ou não nos diferenciar dos demais indivíduos.
 
 Assim como o `HTML`, o `CSS` também possui uma sintaxe própria, que por sua vez, é bem diferente da primeira linguagem que estudamos.
 
