@@ -1,5 +1,6 @@
 
-# Python?
+# Python
+
 ## Por que?
 Acho que que melhor explicação de porque utilizar **Python** pode ser encontrada na própria página [sobre](https://www.python.org/about/) deles.
 >Python is powerful... and fast;  
