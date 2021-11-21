@@ -55,7 +55,6 @@ Vão ficando cada vez menores e menos destacados conforme seu número aumenta.
 ```
 [Aqui](https://www.loom.com/share/6f45cadadd7d4a9ea5c155ac1610fc8e?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre os títulos e outros elementos de texto.
 
----
 
 ### Parágrafos `<p>`
 Como o próprio nome já diz é destinado para acomodar os parágrafos com textos comuns das suas páginas.  
@@ -67,7 +66,6 @@ Como o próprio nome já diz é destinado para acomodar os parágrafos com texto
 ```
 [Aqui](https://www.loom.com/share/6f45cadadd7d4a9ea5c155ac1610fc8e?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre os parágrafos e outros elementos de texto.
 
----
 
 ### Listas Ordenadas `<ol>`
 Para os momentos em que queremos mostras os itens e formato de lista e a ordem deles importa.  
@@ -89,8 +87,6 @@ O código acima produzira uma lista exatamente como a lista abaixo:
 
 [Aqui](https://www.loom.com/share/30053b9c581347bb8a99825706277dc7?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre as listas.
 
----
-
 ### Listas Não Ordenadas
 Para os momentos em que queremos mostrar os itens da lista como tópicos.  
 O `ul` vem de `Unordered List`.
@@ -110,14 +106,10 @@ O código acima produzira uma lista exatamente como a lista abaixo:
 
 [Aqui](https://www.loom.com/share/30053b9c581347bb8a99825706277dc7?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre as listas.
 
----
-
 ### Itens das Listas `<li>`
 Como visto nas duas listas acima, ambas compartilham a mesma estrutura de tags para o conteúdo.  
 O `li` vem de `List Item`.  
 Os itens das listas vão se comportar de acordo com a tag de lista que eles estiverem dentro, sendo `ul` ou `ol`.
-
----
 
 ### Imagens `<img>`
 Utilizando a tag `<img>` podemos adicionar imagens as nossas páginas, tanto imagens que estão no nosso computador, quanto imagens publicadas na internet. 
@@ -132,8 +124,6 @@ Como visto acima, é bastante simples configurar a tag `<img>`, precisamos apena
 - `alt` local onde informaremos um texto alternativo, caso a imagem não seja carregada, muito útil quando utilizamos imagens da ***Internet***, pois suas `URLs` podem ser removidas após algum tempo.
 
 [Aqui](https://www.loom.com/share/f666a45e1db847b090951d1bb6aa2142?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre as imagens.
-
----
 
 ### Divs `<div>`
 Apesar de parecer extremamente simples, os elementos `<div>` são fundamentais para criação de páginas elaboradas e funcionais.
@@ -153,7 +143,6 @@ Como os elementos `<div>` são utilizados para criar novas áreas, a ideia é qu
   ...
 </div>
 ```
----
 
 ### Links `<a>`
 Assim como em outros editores de texto, no `HTML` nós também podemos criar links que direcionam para outras páginas.
@@ -176,4 +165,3 @@ Algumas opções para a propriedade `target` são:
 - `_self` - opção padrão, abre o link na mesma aba do seu site
 - `_blank` - abre o link em uma nova aba do navegador
 
----

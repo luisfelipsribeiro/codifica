@@ -95,3 +95,136 @@ Já a propriedade `href="estilo.css"` é onde estamos informando qual o arquivo 
 **Importante**: podemos linkar quantos arquivos CSS forem necessários em nossas páginas! Porém, precisamos ter cuidado para que os mesmos elementos não estejam sendo modificado nos diversos arquivos, pois isso pode ocasionar efeitos coloterais difíceis de rastrear.
 
 [Aqui](https://www.loom.com/share/f130cf7119064703b50ebfda194a18f8?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre o `CSS` do jeito *"certo"*.
+
+## Como selecionar os elementos para aplicar o estilo?
+...
+
+### Pela tag do elemento
+...
+
+### Pela classe do elemento
+...
+
+### Pelo id do elemento
+...
+
+## Algumas estilizações possíveis
+Abaixo vamos listar algumas das estilizações possíveis, lembrando que são ***apenas algumas***, o `CSS` é muito rico e é possível obter resultados bastante diferentes e inovadores ao explorar suas propriedades.
+
+Os exemplos foram todos aplicados a parágrafos apenas para ilustração, no entanto, podem ser aplicados para praticamente todos os elementos `HTML`. 
+
+<link rel="stylesheet" href="estilo.css">
+
+### Cor do texto
+```css
+p {
+  color: lightblue; 
+}
+```
+
+Resultado: <p class="exemplo_color">Um parágrafo qualquer</p>
+
+### Cor de fundo
+```css
+p {
+  background-color: lightgreen; 
+}
+```
+
+Resultado: <p class="exemplo_background_color">Um parágrafo qualquer</p>
+
+### Fonte
+```css
+p {
+  font-size: 22px; /* tamanho da fonte */
+  font-weight: bold; /* peso da fonte */
+  font-style: italic; /* estilo da fonte */
+  font-family: Arial, Helvetica, sans-serif; /* família da fonte */
+}
+```
+
+Resultado: <p class="exemplo_fonte">Um parágrafo qualquer</p>
+
+### Alinhamento do texto
+Podemos alterar o alinhamento horizontal dos textos.
+```css
+p {
+  text-align: center; /* alinhamento do texto */
+}
+```
+
+Resultado: <p class="exemplo_alinhamento_texto">Um parágrafo qualquer</p>
+
+### Borda nos elementos
+Não só é possível adicionar borda em praticamente todos os elementos `HTML`, como também é possível deixa-las de diferentes formas. 
+
+Para isso temos algumas propriedades referentes a borda:
+
+```css
+p {
+  border-style: solid; /* borda solida, poderia ser pontilhada, etc */
+  border-width: 2px; /* largura de 2px */
+  border-color: blue; /* cor azul */
+  border-radius: 5px; /* arredondamento nos cantos */
+}
+```
+
+Resultado: <p class="exemplo_border">Um parágrafo qualquer</p>
+
+### Largura e Altura
+```css
+p {
+  width: 250px; /* largura */
+  height: 100px; /* altura */
+
+  /* borda para auxiliar na visualização*/
+  border-style: solid; 
+  border-width: 1px; 
+}
+```
+
+Resultado: <p class="exemplo_largura_e_altura">Um parágrafo qualquer</p>
+
+### Espaçamento interno
+Considere a ***borda do elemento como um muro***, ***área do elemento como um quintal*** e o ***texto ou conteúdo do elemento como uma casa***, a propriedade `padding` trabalha o espaçamento interno, ou seja o ***espaço entre o muro e a casa***.
+
+```css
+p {
+  padding-top: 5px; /* espaçamento interno superior */
+  padding-left: 10px; /* espaçamento interno esquerdo */
+  padding-right: 10px; /* espaçamento interno direito */
+  padding-bottom: 5px; /* espaçamento interno inferior */
+
+  /* borda para auxiliar na visualização*/
+  border-style: solid;
+  border-width: 1px;
+}
+```
+
+Resultado: <p class="exemplo_espacamento_interno">Um parágrafo qualquer</p>
+
+### Espaçamento externo
+Seguindo com o mesmo exemplo considere a ***borda do elemento como um muro***, ***área do elemento como um quintal*** e o ***texto ou conteúdo do elemento como uma casa***, a propriedade `margin` trabalha o espaçamento externo, ou seja o ***espaço entre o muro e a rua*** ou qualquer coisa que esteja do lado de fora do muro.
+
+```css
+p {
+  margin-top: 10px; /* espaçamento externo superior */
+  margin-left: 20px; /* espaçamento externo esquerdo */
+  margin-right: 20px; /* espaçamento externo direito */
+  margin-bottom: 10px; /* espaçamento externo inferior */
+
+  /* borda para auxiliar na visualização*/
+  border-style: solid;
+  border-width: 1px;
+}
+```
+
+Resultado: <p class="exemplo_espacamento_externo">Um parágrafo qualquer</p>
+
+## Posicionamento de elementos
+
+### Utilizando a propriedade `display`
+...
+
+### Utilizando a propriedade `position`
+...

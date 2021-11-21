@@ -1,0 +1,56 @@
+.exemplo_color {
+  color: lightblue;
+}
+
+.exemplo_background_color {
+  background-color: lightgreen;
+}
+
+.exemplo_fonte {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.exemplo_alinhamento_texto {
+  text-align: center;
+}
+
+.exemplo_border {
+  border-style: solid;
+  border-width: 2px;
+  border-color: blue;
+  border-radius: 5px;
+}
+
+.exemplo_largura_e_altura {
+  width: 250px;
+  height: 100px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.exemplo_espacamento_interno {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+
+  border-style: solid;
+  border-width: 1px;
+}
+
+.exemplo_espacamento_externo {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+
+  border-style: solid;
+  border-width: 1px;
+}
+
+.exemplo_text_decoration {
+  text-decoration: dotted;
+}
