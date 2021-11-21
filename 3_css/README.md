@@ -200,8 +200,6 @@ Abaixo vamos listar algumas das estilizações possíveis, lembrando que são **
 
 Os exemplos foram todos aplicados a parágrafos apenas para ilustração, no entanto, podem ser aplicados para praticamente todos os elementos `HTML`. 
 
-<link rel="stylesheet" href="estilo.css">
-
 ### Cor do texto
 ```css
 p {
@@ -209,16 +207,12 @@ p {
 }
 ```
 
-Resultado: <p style="color: lightblue;">Um parágrafo qualquer</p>
-
 ### Cor de fundo
 ```css
 p {
   background-color: lightgreen; 
 }
 ```
-
-Resultado: <p style="background-color: lightgreen;">Um parágrafo qualquer</p>
 
 ### Fonte
 ```css
@@ -230,8 +224,6 @@ p {
 }
 ```
 
-Resultado: <p style="font-size: 22px;font-weight: bold;font-style: italic;font-family: Arial, Helvetica, sans-serif;">Um parágrafo qualquer</p>
-
 ### Alinhamento do texto
 Podemos alterar o alinhamento horizontal dos textos.
 ```css
@@ -239,8 +231,6 @@ p {
   text-align: center; /* alinhamento do texto */
 }
 ```
-
-Resultado: <p style="text-align: center;">Um parágrafo qualquer</p>
 
 ### Borda nos elementos
 Não só é possível adicionar borda em praticamente todos os elementos `HTML`, como também é possível deixa-las de diferentes formas. 
@@ -256,8 +246,6 @@ p {
 }
 ```
 
-Resultado: <p style=" border-style: solid;border-width: 2px;border-color: blue;border-radius: 5px;">Um parágrafo qualquer</p>
-
 ### Largura e Altura
 ```css
 p {
@@ -269,8 +257,6 @@ p {
   border-width: 1px; 
 }
 ```
-
-Resultado: <p style="width: 250px;height: 100px;border-style: solid;border-width: 1px;">Um parágrafo qualquer</p>
 
 ### Espaçamento interno
 Considere a ***borda do elemento como um muro***, ***área do elemento como um quintal*** e o ***texto ou conteúdo do elemento como uma casa***, a propriedade `padding` trabalha o espaçamento interno, ou seja o ***espaço entre o muro e a casa***.
@@ -288,8 +274,6 @@ p {
 }
 ```
 
-Resultado: <p style="padding-top: 5px;padding-left: 10px;padding-right: 10px;padding-bottom: 5px;border-style: solid;border-width: 1px;">Um parágrafo qualquer</p>
-
 ### Espaçamento externo
 Seguindo com o mesmo exemplo considere a ***borda do elemento como um muro***, ***área do elemento como um quintal*** e o ***texto ou conteúdo do elemento como uma casa***, a propriedade `margin` trabalha o espaçamento externo, ou seja o ***espaço entre o muro e a rua*** ou qualquer coisa que esteja do lado de fora do muro.
 
@@ -305,8 +289,6 @@ p {
   border-width: 1px;
 }
 ```
-
-Resultado: <p style="margin-top: 10px;margin-left: 20px;margin-right: 20px;margin-bottom: 10px;border-style: solid;border-width: 1px;">Um parágrafo qualquer</p>
 
 ## Posicionamento de elementos
 
