@@ -298,7 +298,6 @@ p {
 
 [Aqui](https://www.loom.com/share/fb9fcd15cf874c318dd92787bbdfa41b?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre posicionamento com a propriedade `display: inline-block`.
 
-
 ### Utilizando a propriedade `position`
 
 [Aqui](https://www.loom.com/share/6138f7b95c4248b3a96360bb58c40bba?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre posicionamento com a propriedade `position: relative`.
@@ -306,3 +305,30 @@ p {
 [Aqui](https://www.loom.com/share/834be468c9074b1988b6418f45f1bfc4?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre posicionamento com a propriedade `position: absolute`.
 
 [Aqui](https://www.loom.com/share/8c1d59757edc472d8fe3ab7f5cc97bbd?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre os cuidados ao utilizar `position: relative` ou `position: absolute`.
+
+## Pseudo-classes
+As `pseudo-classes` do `CSS` são utilizadas para estilizar elementos `HTML` em momentos específicos.
+
+### `:hover`
+O `:hover` nos permite aplicar alguma estilização nos elementos no momento em que o usuário passar o cursor do mouse sobre eles. Após o cursor do mouse sair de cima do elemento, ele retornará para o seu estilo original.
+
+```css
+/* os parágrafos ficarão com texto em azul quando o usuário passar o mouse sobre eles */
+p:hover {
+  color: blue; 
+}
+```
+
+### `:active`
+O `:active` nos permite aplicar alguma estilização nos elementos no momento em que eles estão sendo clicados. Após o clique, os elementos retornarão para o seu estilo original.
+
+```css
+/* os elementos com a class .produtos ficarão com a largura da borda de 5px quando o usuário clicar nos elementos */
+.produtos:active {
+  border-width: 5px;
+  ...
+}
+```
+
+### Referências sobre o assunto e outras pseudo-classes
+- https://www.w3schools.com/css/css_pseudo_classes.asp
