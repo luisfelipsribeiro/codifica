@@ -165,3 +165,71 @@ Algumas opções para a propriedade `target` são:
 - `_self` - opção padrão, abre o link na mesma aba do seu site
 - `_blank` - abre o link em uma nova aba do navegador
 
+## Tags semânticas
+São marcações que agregam mais significado ao HTML ao prover uma ligação entre o conteúdo e a estrutura de documentos desse tipo.
+
+É através de cada elemento semântico do `HTML5` que os mecanismos de busca do Google e outros sites de pesquisa identificam o conteúdo da página e o elencam como mais ou menos relevante para os seus usuários. É uma prática indispensável para o tão falado SEO ([Search Engine Optimization](https://rockcontent.com/br/blog/o-que-e-seo/))!
+
+Outro grande ponto é que através dessa estrutura os sites se tornam acessíveis para deficientes visuais que utilizam um leitor de voz para ler o conteúdo.
+
+Exemplo de organização de página utilizando as tags semânticas:
+
+![Estrutura da página utilizando tags semânticas](https://miro.medium.com/max/2400/1*NjJoYvshr5Jyj4HMu0aXnA.jpeg)
+
+### `<nav>`
+Utilizado para sinalizar o menu de navegação da página.
+
+```html
+<nav>
+  <ul>
+    <li>Home</li>
+    <li>Produtos</li>
+    <li>Sobre</li>
+  </ul>
+</nav>
+```
+
+### `<header>`
+Cabeçalho da página ou de um seção da página.
+
+```html
+<header>
+  <h1>Página de Produtos</h1>
+<header>
+```
+
+### `<main>`
+Área destinada ao conteúdo de maior relevância da sua página.
+
+```html
+<main>
+  <div id=lista-de-produtos>
+    ...
+  </div>
+</main>
+```
+
+### `<section>`
+Utilizada quando você quer dividir o seu conteúdo principal em seções.  
+Normalmente possui um título para a seção.
+
+```html
+<section>
+  <h2>Título da seção</h2>
+  <p>Algum conteúdo na seção</p>
+</section>
+```
+
+### `<footer>`
+Área destinada para o rodapé da sua página.
+
+```html
+<footer>
+  <img src="logo-da-empresa.jpg" alt="Logo da empresa">
+</footer>
+```
+
+### Referências sobre o assunto e outras tags:
+- https://www.w3schools.com/html/html5_semantic_elements.asp
+- https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065
+- https://medium.com/reprogramabr/semanticahtml5-5252b4937f0a
