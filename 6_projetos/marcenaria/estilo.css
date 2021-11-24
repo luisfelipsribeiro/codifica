@@ -1,0 +1,40 @@
+.banner {
+  width: 100%;
+}
+
+.texto_centralizado {
+  text-align: center;
+}
+
+.fundo_cinza {
+  background-color: lightgray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+em strong {
+  color: red;
+}
+
+.missao {
+  font-size: 20px;
+}
+
+.imagem_beneficios {
+  width: 40%;
+}
+
+ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+/* .container {
+  padding-top: 20px;
+
+}
+
+.box {
+  position: relative;
+} */
