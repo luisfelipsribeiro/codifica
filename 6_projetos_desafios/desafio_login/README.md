@@ -1,5 +1,6 @@
 # Desafio: Tela de Login
 Para esse desafio utilizaremos `HTML, CSS e Javascript`.
+Para o logo da base, utilize a imagem que está nesse projeto, arquivo `logo.jpeg` na pasta `imagens`.
 
 ## Resultado visual esperado
 ![Resultado visual esperado](imagens/desafio_login_1.jpg)
