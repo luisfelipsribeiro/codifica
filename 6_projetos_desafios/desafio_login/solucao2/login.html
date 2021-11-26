@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Login</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+  <main>
+    <div>
+      <img src="imagens/logo.jpeg" alt="Logo da Base Social">
+
+      <form onsubmit="login()">
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="texto" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" class="texto" required>
+
+        <label>
+          <input type="checkbox" checked>
+          Continuar logado?</label>
+
+        <div>
+          <input type="submit" value="Login">
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+
+</html>
