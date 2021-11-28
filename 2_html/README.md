@@ -87,7 +87,7 @@ O código acima produzira uma lista exatamente como a lista abaixo:
 
 [Aqui](https://www.loom.com/share/30053b9c581347bb8a99825706277dc7?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre as listas.
 
-### Listas Não Ordenadas
+### Listas Não Ordenadas `<ul>`
 Para os momentos em que queremos mostrar os itens da lista como tópicos.  
 O `ul` vem de `Unordered List`.
 
@@ -355,7 +355,7 @@ Alguns exemplos de validações que podem ocorrer no `submit` do `form`:
 1. se campos obrigatórios estão preenchidos
 2. se campos com algum formato de conteúdo estão preenchido corretamente, como o e-mail.
 
-O formulário por sua vez, é um tipo de **container**, assim como as `divs`, no entanto devemos deixar dentro dele os inputs que **validaresmo e/ou enviaremos**, seja para um cadastro via `Backend` ou para o nosso `Javascript`.
+O formulário por sua vez, é um tipo de **container**, assim como as `divs`, no entanto devemos deixar dentro dele os `inputs` que **validaremos e/ou enviaremos**, seja para um cadastro via `Backend` ou para o nosso `Javascript`.
 
 ```html
 <form>
@@ -363,6 +363,8 @@ O formulário por sua vez, é um tipo de **container**, assim como as `divs`, no
   <input type="submit" value="Clique aqui para salvar">
 </form>
 ```
+
+*Importante: o evento `onsubmit` do `form` só é disparado **se todos** os inputs que estão dentro dele estiverem preenchidos de forma correta e respeitando suas validações.*
 
 [Aqui](https://www.loom.com/share/a96894988e6a419586d526844a9cf558?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre os formulários e os botões de envio.
 
