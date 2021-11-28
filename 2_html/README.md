@@ -165,6 +165,208 @@ Algumas opções para a propriedade `target` são:
 - `_self` - opção padrão, abre o link na mesma aba do seu site
 - `_blank` - abre o link em uma nova aba do navegador
 
+## Inputs
+Os elementos de `Input` ou Entrada, são os elementos que permitem que os usuários interajam com o sistema fornecendo informações.
+Existem diversos tipos, de texto, de número, de data, de hora, de aquivos e aqui exploraremos alguns dos principais. 
+
+### Legendas dos campos `<label>`
+Quase todos os inputs não possuem um texto explicando para que eles servem ou o que deve ser digitado lá, por isso utilizamos em conjunto com a maioria deles o elemento `label`, normalmente acima dos campos ou ao lado, que serve como uma legenda para os campos, com textos como: ***"Digite seu email:"*** ou ***"Nome completo:"***.
+
+```html
+<label for="">Digite seu nome</label>
+```
+
+Uma coisa importante sobre o elemento é a propriedade `for=""`, nela devemos informar o `id` do campo que o `label` serve como legenda, isso ficará mais claro nos tópicos a seguir.
+
+[Aqui](https://www.loom.com/share/1e953fd4d99e408e980bc615abf4d8b3?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre as legendas.
+
+### Texto simples 
+Elemento para textos simples em geral.
+
+```html
+<label for="nome">Digite seu nome</label>
+<input type="text" id="nome">
+```
+
+Elemento para que o usuário digite valores de e-mail.
+
+```html
+<label for="email">Digite seu email</label>
+<input type="email" id="email">
+```
+
+[Aqui](https://www.loom.com/share/7564ed29b12349aea2347d12afab26fd?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre inputs de texto.
+
+### Valores relacionados a datas
+Elemento para que o usuário informe um mês.
+
+```html
+<label for="mes">Digite o mes de nascimento</label>
+<input type="month" id="mes">
+```
+
+Elemento para que o usuário informe uma data.
+
+```html
+<label for="data">Digite a data de nascimento</label>
+<input type="date" id="data">
+```
+
+Elemento para que o usuário informe uma data e hora.
+
+```html
+<label for="data-e-hora">Digite a data e hora de alguma coisa</label>
+<input type="datetime" id="data-e-hora">
+```
+
+[Aqui](https://www.loom.com/share/7564ed29b12349aea2347d12afab26fd?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre os inputs de data.
+
+### Números `<input type="number">`
+Elemento para que o usuário informe um número.
+
+```html
+<label for="irmaos">Digite o numero de irmãos</label>
+<input type="number" id="irmaos">
+```
+
+[Aqui](https://www.loom.com/share/7564ed29b12349aea2347d12afab26fd?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre o input de números.
+
+### Única escolha `<input type="radio">`
+O elemento `radio` nos permite oferecer opções de escolha para o usuário, sem que ele precise digitar algo, apenas selecionar.
+
+```html
+<input type="radio" value="" id="">
+```
+
+Apesar de ter a propriedade `value`, o `radio` precisa obrigatóriamente estar junto com o elemento `label` para que tenha algum texto vizível, do contrário, apenas uma bolinha será mostrada na tela.
+
+```html
+<label for="algum-id">
+  <input type="radio" value="" id="algum-id">Algum texto para a opção...
+</label>
+```
+
+Percebam que o texto *"Algum texto para a opção..."* está dentro do elemento `label`, mas fora do `input`.
+
+O `radio` é normalmente utilizado para oferecer opções ao usuário, e por isso dificilmente teremos apenas um.
+
+```html
+<label for="opcao1">
+  <input type="radio" name="opcao" value="opcao1" id="opcao1">Opção 1
+</label>
+
+<label for="opcao2">
+  <input type="radio" name="opcao" value="opcao2" id="opcao2">Opção 2
+</label>
+
+<label for="opcao3">
+  <input type="radio" name="opcao" value="opcao3" id="opcao3">Opção 3
+</label>
+```
+
+No entanto, quando temos mais do que um elemento `radio` na tela, eles se comportarão de maneira individualizada, permitindo que vários sejam selecionados ao mesmo tempo, a menos que todos tenham a propriedade `name` igual. Isso fará com que eles funcionem como um grupo, assim, sempre que um for marcado, os demais serão desmarcados automáticamente.
+
+Perceba que cada `radio` tem sua propriedade `value`, esse é o valor real que será obtido ao selecionar de fato o elemento e será útil futuramente ao utilizar o `Javascript`.
+
+[Aqui](https://www.loom.com/share/3ed4da5a15ba489c9162a9d25d7f8bf5?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre o radio.
+
+### Múltipla Escolha `<input type="checkbox">`
+O elemento `checkbox` é outra forma de oferecer opções de escolha para o usuário, porém ele é utilizado quando as escolhas são independentes umas das outras, ou seja, o usuário pode marcar várias se quiser.
+
+```html
+<input type="checkbox" value="" id="">
+```
+
+Assim como o `radio`, o `checkbox` precisa obrigatóriamente estar junto com o elemento `label` para que tenha algum texto vizível, do contrário, apenas uma caixinha de marcação será mostrada na tela.
+
+```html
+<label for="algum-id">
+  <input type="checkbox" value="" id="algum-id">Algum texto para a opção...
+</label>
+```
+
+O `checkbox` pode ser utilizado sozinho em casos como:
+
+1. *"Deseja salvar a sua senha?"* ou
+2. *"O endereço de entrega será o mesmo de cobrança?"*
+
+Ou em conjunto para oferecer múltiplas escolhas para o usuário:
+
+```html
+<label for="opcao1">
+  <input type="checkbox" value="opcao1" id="opcao1">Opção 1
+</label>
+
+<label for="opcao2">
+  <input type="checkbox" value="opcao2" id="opcao2">Opção 2
+</label>
+
+<label for="opcao3">
+  <input type="checkbox" value="opcao3" id="opcao3">Opção 3
+</label>
+```
+
+Perceba que cada `checkbox` tem sua propriedade `value`, esse é o valor real que será obtido ao marcar o elemento e será útil futuramente ao utilizar o `Javascript`.
+
+[Aqui](https://www.loom.com/share/fad77a81001d4d559d0e0200a0fa5c38?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre o checkbox.
+
+### Caixa de seleção `<select>`
+Uma forma de oferecer opções para o usuário e que não é necessáriamente um `input` é o elemento `select`. Assim como o `radio`, a ideia é que o usuário tenha apenas uma opção de escolha, no entanto, essas opções ficarão escondidas dentro de uma caixa e serão mostradas apenas quando o usuário clicar no elemento.
+
+Muito útil quando o número de opções é bem grande, imagine por exemplo que você solicitou ao usuário que ele informasse a *Cidade onde nasceu*, a lista completa de cidades do País ou Estado é gigantesca e mostrar todas as opções de uma vez na tela pode não ser uma boa ideia.
+
+```html
+<select name="cidade-nascimento" id="cidade">
+  <option value="">Selecione...</option>
+  <option value="sao-vicente">São Vicente</option>
+  <option value="santos">Santos</option>
+  <option value="praia-grande">Praia Grande</option>
+  <option value="guaruja">Guarujá</option>
+  ...
+</select>
+```
+
+Todo elemento `select` é composto por `options` (opções).  
+No exemplo acima, foi incluída uma primeira opção, apenas para mostrar o texto *"Selecione..."* no elemento, quando a tela for carregada.
+
+Perceba que cada `option` tem sua propriedade `value`, esse é o valor real que será obtido ao selecionar de fato uma opção e será útil futuramente ao utilizar o `Javascript`.
+
+[Aqui](https://www.loom.com/share/c2e7f5126ee244acb0d81612bed630c5?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre as caixas de seleção.
+
+### Botão `input<type="button">`
+Para incluir botões de ação nas nossas telas. 
+
+```html
+<!-- 1ª forma de fazer -->
+<input type="button" value="Clique aqui">
+
+<!-- 2ª forma de fazer -->
+<button>Clique aqui</button>
+```
+
+[Aqui](https://www.loom.com/share/e19346a4aae44a01a6031c6b6f1eda13?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre os botões.
+
+### Formulário `<form>` e botão de envio `<input type="submit">`
+O input do tipo `submit` tem o objetivo de submeter as informações, ou seja, confirmar e enviar. 
+
+Apesar de ter a mesma aparência de um botão normal, seu funcionamento é diferente e funciona apenas em conjunto com formulários. Quando o botão de submeter é clickado, o evento `onsubmit` do `form` é disparado e isso faz com que todas as informações dos elementos que estão dentro do formulário sejam validadas e enviadas. 
+
+Alguns exemplos de validações que podem ocorrer no `submit` do `form`:
+1. se campos obrigatórios estão preenchidos
+2. se campos com algum formato de conteúdo estão preenchido corretamente, como o e-mail.
+
+O formulário por sua vez, é um tipo de **container**, assim como as `divs`, no entanto devemos deixar dentro dele os inputs que **validaresmo e/ou enviaremos**, seja para um cadastro via `Backend` ou para o nosso `Javascript`.
+
+```html
+<form>
+  ...
+  <input type="submit" value="Clique aqui para salvar">
+</form>
+```
+
+[Aqui](https://www.loom.com/share/a96894988e6a419586d526844a9cf558?sharedAppSource=personal_library) tem um vídeo bem curtinho falando sobre os formulários e os botões de envio.
+
+
 ## Tags semânticas
 São marcações que agregam mais significado ao HTML ao prover uma ligação entre o conteúdo e a estrutura de documentos desse tipo.
 
@@ -227,6 +429,28 @@ Normalmente possui um título para a seção.
 <footer>
   <img src="logo-da-empresa.jpg" alt="Logo da empresa">
 </footer>
+```
+
+### `<fieldset>`
+Utilizada quando temos campos de opção, ou seja elementos diferentes que representam uma escolha para o usuário.
+
+Deve ser usado em conjunto com os elementos:
+1. `radio`
+2. `checkbox`
+3. `select`
+
+Sempre deve ter o elemento `legend` (legenda), que serve como legenda para o agrupamento de opções.
+
+```html
+<fieldset>
+  <legend>Cidade de nascimento</legend>
+  <select name="cidade-nascimento" id="cidade">
+    <option value="">Selecione...</option>
+    <option value="sao-vicente">São Vicente</option>
+    <option value="santos">Santos</option>
+    ...
+  </select>
+</fieldset>
 ```
 
 ### Referências sobre o assunto e outras tags:
