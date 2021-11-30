@@ -40,9 +40,7 @@ form .texto {
   border-width: 1px;
 }
 
-form input[type="submit"] {
-  display: block;
-  position: relative;
-  margin-top: 10px;
-  left: 40%;
+form .area_botao {
+  text-align: center;
+  margin-top: 5px;
 }

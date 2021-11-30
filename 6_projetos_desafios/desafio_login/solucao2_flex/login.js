@@ -1,6 +1,6 @@
 function login() {
-  email = document.getElementById("email").value;
-  senha = document.getElementById("senha").value;
+  var email = document.getElementById("email").value;
+  var senha = document.getElementById("senha").value;
 
   if (email == "caio@basesocial.org" && senha == "base123") {
     alert("Usuário logado com sucesso!");
